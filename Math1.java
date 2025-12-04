@@ -17,6 +17,10 @@ class Calculator{
         return a / b;
     }
 
+    double divide(double a, double b){
+        return a / b;
+    }
+
 
     int modulo(int a, int b) {
         return a % b;
@@ -37,6 +41,9 @@ public class Math1 {
         System.out.println(calc.subtract(10, 5));
         System.out.println(calc.multiply(10, 5));
         System.out.println(calc.divide(10, 5));
+        System.out.println(calc.divide(10.6, 5.3));
+        
+        
         System.out.println(calc.modulo(10, 4));
 
     }
