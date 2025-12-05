@@ -4,6 +4,13 @@ class ScoreBoard{
 
     int playerXP = 0;
     int playerLevel = 0;
+    String playerName;
+    int health = 100;
+
+    public ScoreBoard(String username){
+        playerName = username;
+
+    }
 
     String gameName = "Fortnite";
 
@@ -18,11 +25,11 @@ class ScoreBoard{
     
 
     void heal(){
-        playerXP += 50; //compound addition, compound accumulation
+        health += 50; //compound addition, compound accumulation
     }
 
     void damage(){
-        playerXP -= 10; //compound subtraction
+        health -= 10; //compound subtraction
     }
 
     //note you can also *=, /=, and %= */
@@ -35,17 +42,26 @@ class ScoreBoard{
         playerLevel--; //decrement
     }
 
+    static String NAME = "Fortnite";
+
+    void getName() {
+        System.out.println(NAME);
+    }
+
+
+
 }
 
 
 public class Math2 {
     public static void main(String[] args){
 
-        ScoreBoard player1 = new ScoreBoard();
+        
 
-        ScoreBoard player2 = new ScoreBoard();
+        
 
-        ScoreBoard gameName1 = new ScoreBoard();
+        ScoreBoard player1 = new ScoreBoard("Alex");
+        ScoreBoard player2 = new ScoreBoard("Logan");
 
         player1.gameXP(100);
         player1.gameXP(200);
@@ -63,15 +79,16 @@ public class Math2 {
         player2.levelUp();
         player2.levelDown();
 
-        gameName1.name();
+        
+        
 
-        System.out.println();
-
-        System.out.println("PlayerXP:" + player1.playerXP);
+        System.out.println(player1 + " XP:" + player1.playerXP);
         System.out.println("Player Level: " + player1.playerLevel);
+        System.out.println("Player health: " + player1.health);
 
         System.out.println("Player 2 XP:" + player2.playerXP);
         System.out.println("Player 2 Level: " + player2.playerLevel);
+        System.out.println("Player 2 health: " + player2.health);
         
     }
 }
