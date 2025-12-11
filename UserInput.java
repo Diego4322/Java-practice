@@ -1,5 +1,4 @@
 //Scanner library
-import java.security.DigestOutputStream;
 import java.util.Scanner;
 
 public class UserInput {
