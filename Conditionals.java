@@ -1,3 +1,9 @@
+
+import java.util.Scanner;
+
+
+
+
 public class Conditionals {
     public static void main(String[] args){
 
@@ -66,6 +72,18 @@ public class Conditionals {
             System.out.println("Its the weekday " + ":(");
         } else{
             System.out.println("This is not a day");
+        }
+
+
+        String password = "cat";
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Enter password: ");
+        String pass = input.nextLine();
+        
+
+        if (pass = "cat"){
+
         }
 
 
