@@ -13,7 +13,7 @@ public class ComputeAvg {
         for (int i = 0; i < scores.length; i++) {
             System.out.print("Enter test score " + (i + 1) + ": ");
             scores[i] = input.nextInt();
-            sum += scores[i];
+            sum = scores[i];
         }
 
         
